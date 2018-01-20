@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Boundary
+public class ObjectBoundary
 {
     public float xMin, xMax, zMin, zMax;
 
