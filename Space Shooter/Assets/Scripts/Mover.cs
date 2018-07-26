@@ -6,14 +6,9 @@ public class Mover : MonoBehaviour {
 
     public int speed;
     public Rigidbody rb;
-    public Boundary boundary;
-	// Update is called once per frame
-	void FixedUpdate ()
+
+    private void Start()
     {
         rb.velocity = transform.forward * speed;
-        if(boundary.OutOfBounds(transform.position))
-        {
-            Destroy(gameObject);
-        }
-	}
+    }
 }
